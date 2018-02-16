@@ -1,0 +1,8 @@
+{
+  "name": "ExamplesJM",
+  "app_id": "18ac9a20",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
