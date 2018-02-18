@@ -10,6 +10,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AdventDaysProvider } from '../providers/advent-days/advent-days';
+import { TextDataProvider } from '../providers/text-data/text-data';
  
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { AdventDaysProvider } from '../providers/advent-days/advent-days';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AdventDaysProvider
+    AdventDaysProvider,
+    TextDataProvider
   ]
 })
 export class AppModule {}
