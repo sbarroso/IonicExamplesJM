@@ -11,6 +11,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AdventDaysProvider } from '../providers/advent-days/advent-days';
 import { TextDataProvider } from '../providers/text-data/text-data';
+import { FlashProvider } from '../providers/flash/flash';
  
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { TextDataProvider } from '../providers/text-data/text-data';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AdventDaysProvider,
-    TextDataProvider
+    TextDataProvider,
+    FlashProvider
   ]
 })
 export class AppModule {}
